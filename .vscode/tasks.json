@@ -1,0 +1,23 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build",
+      "type": "shell",
+      "command": "cmd",
+      "args": [
+        "/c",
+        "\"C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Auxiliary\\Build\\vcvars64.bat\" && cl /std:c++17 /EHsc /Zi /I\"${workspaceFolder}\\src\" \"${workspaceFolder}\\src\\main.cpp\" \"${workspaceFolder}\\src\\Chat.cpp\" \"${workspaceFolder}\\src\\Comment.cpp\" \"${workspaceFolder}\\src\\Date.cpp\" \"${workspaceFolder}\\src\\Group.cpp\" \"${workspaceFolder}\\src\\Like.cpp\" \"${workspaceFolder}\\src\\Page.cpp\" \"${workspaceFolder}\\src\\Post.cpp\" /Fe:\"${workspaceFolder}\\SocialNetwork.exe\" /Fd:\"${workspaceFolder}\\SocialNetwork.pdb\""
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": "$msCompile",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    }
+  ]
+}

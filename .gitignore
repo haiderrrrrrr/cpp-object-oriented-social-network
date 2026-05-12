@@ -1,0 +1,18 @@
+# Build output
+*.exe
+*.obj
+*.pdb
+*.dll
+*.out
+build/
+
+# VS Code local settings
+.vs/
+
+# Runtime data files
+data/
+self-test-data/
+
+# Legacy Visual Studio
+Debug/
+Release/
